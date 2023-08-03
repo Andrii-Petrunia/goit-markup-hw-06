@@ -99,7 +99,6 @@ input {
   text-transform: uppercase;
   padding-top: 24px;
   padding-bottom: 24px;
-  
 }
 
 .header-logo-part {
@@ -156,7 +155,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 40px;
+  padding: 80px 35px 40px 40px;
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -189,7 +188,6 @@ input {
 }
 
 .mob-menu-list {
-  padding-top: 80px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -202,16 +200,20 @@ input {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--navyblue, #2E2F42);
+  color: var(--navyblue, #2e2f42);
 }
 
-.mob-menu-link:is(:hover, :focus){
-  color: var(--ocean, #404BBF);
+.mob-menu-link:is(:hover, :focus) {
+  color: var(--ocean, #404bbf);
+}
+
+.current {
+  position: relative;
+  color: var(--ocean, #404bbf);
 }
 
 .header-mob-address {
   font-style: normal;
-  
 }
 
 .mob-menu-contacts {
@@ -222,7 +224,7 @@ input {
 }
 
 .mob-contact-tel {
-  color: var(--slate, #434455);
+  color: var(--iris, #4d5ae5);
   font-family: Roboto;
   font-size: 26px;
   font-weight: 700;
@@ -230,10 +232,6 @@ input {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mob-contact-tel:is(:hover, :focus){
-  color: var(--iris, #4d5ae5);
 }
 
 .mob-contact-mail {
@@ -245,14 +243,13 @@ input {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-contact-mail:is(:hover, :focus){
+.mob-contact-mail:is(:hover, :focus) {
   color: var(--iris, #4d5ae5);
 }
 
 .mob-socials-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 40px;
 }
 
 .mob-socials-icon {
@@ -390,7 +387,6 @@ input {
 
 .team-section {
   background-color: var(--cloud, #f4f4fd);
-  /* padding-bottom: 120px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -410,6 +406,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  justify-content: center;
 }
 
 .team-card {
@@ -419,7 +416,6 @@ input {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  margin: 0 auto;
   max-width: 264px;
 }
 
@@ -459,6 +455,7 @@ input {
 .team-socials-icon {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
 
 .socials-link:hover,
@@ -499,6 +496,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   gap: 72px 16px;
+  justify-content: center;
 }
 
 .customers-company {
@@ -545,6 +543,7 @@ input {
 .footer-webstudio {
   display: flex;
   flex-direction: column;
+  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -576,11 +575,11 @@ input {
   letter-spacing: 0.02em;
   width: 268px;
   margin: 0 auto;
-  margin-bottom: 72px;
 }
 
 .footer-socials {
   margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .footer-socials-text {
@@ -597,7 +596,6 @@ input {
 .footer-list {
   display: flex;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-socials-icon {
@@ -736,9 +734,9 @@ input {
   padding-bottom: 48px;
 }
 
-.portfolio-card {
+/* .portfolio-card {
   width: calc((100% - 48px) / 3);
-}
+} */
 
 .portfolio-cover {
   position: relative;
@@ -818,7 +816,7 @@ input {
 }
 
 .modal {
-  width: 408px;
+  width: 100%;
   min-height: 584px;
   border-radius: 4px;
   background-color: var(--dairy, #fcfcfc);
